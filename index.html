@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sipwear - Your Go-To Shop for Stylish Wear</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    nav ul li:hover {
+      color: #fcb900;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(135deg, #6c63ff, #5b8def);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #fcb900;
+      color: #333;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #e0a800;
+    }
+
+    /* Products Section */
+    .products {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    .product-card p {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .product-card a {
+      background-color: #6c63ff;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-card a:hover {
+      background-color: #584dd5;
+    }
+
+    /* Partners Section */
+    .partners {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #f1f1f1;
+    }
+
+    .partners h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .partners img {
+      width: 150px;
+      margin: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .partners img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #333;
+      color: white;
+    }
+
+    footer p {
+      margin-bottom: 1rem;
+    }
+
+    footer a {
+      color: #fcb900;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .products {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .partners img {
+        width: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .partners img {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <h1>Sipwear</h1>
+    <ul>
+      <li>Home</li>
+      <li>Shop</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Sipwear</h1>
+    <p>Your go-to destination for trendy and stylish wear</p>
+    <button>Shop Now</button>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$10 - $20</p>
+      <a href="https://www.flipkart.com" target="_blank">Buy on Flipkart</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$15 - $25</p>
+      <a href="https://www.amazon.com" target="_blank">Buy on Amazon</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>$20 - $30</p>
+      <a href="https://www.flipkart.com" target="_blank">Buy on Flipkart</a>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners">
+    <h2>Shop with Our Partners</h2>
+    <a href="https://www.flipkart.com" target="_blank">
+      <img src="https://via.placeholder.com/150x50?text=Flipkart" alt="Flipkart">
+    </a>
+    <a href="https://www.amazon.com" target="_blank">
+      <img src="https://via.placeholder.com/150x50?text=Amazon" alt="Amazon">
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Sipwear | Built with ❤️</p>
+    <p>Contact us: <a href="mailto:support@sipwear.com">support@sipwear.com</a></p>
+  </footer>
+
+</body>
+</html>
